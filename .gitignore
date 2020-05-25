@@ -1,5 +1,6 @@
 # Custom
 .vscode
+ephemeris.db3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -130,3 +131,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+ephemeris.db3

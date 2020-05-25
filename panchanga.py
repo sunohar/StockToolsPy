@@ -169,7 +169,7 @@ def sidereal_longitude(jd, planet):
   set_ayanamsa_mode()
   longi = swe.calc_ut(jd, planet, flag = swe.FLG_SWIEPH | swe.FLG_SIDEREAL)
   reset_ayanamsa_mode()
-  return norm360(longi[0]) # degrees
+  return norm360(longi[0][0]) # degrees
 
 solar_longitude = lambda jd: sidereal_longitude(jd, swe.SUN)
 lunar_longitude = lambda jd: sidereal_longitude(jd, swe.MOON)

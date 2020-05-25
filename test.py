@@ -1,5 +1,6 @@
 from panchanga import planetary_positions, sidereal_longitude, ketu, Date, Place
 import swisseph as swe
+#pip3 install pyswisseph to get swisseph module
 
 # namah suryaya chandraya mangalaya ... rahuve ketuve namah
 swe.KETU = swe.PLUTO  # I've mapped Pluto to Ketu
@@ -32,5 +33,5 @@ if __name__ == "__main__":
     hyderabad = Place(17.383, 78.484, +5.5)
     jd = swe.julday(2020, 3, 15, 12 + 00./60)
     print(jd)
-    position = planet_position(jd, hyderabad, swe.GURU)
+    position = planet_position(jd, hyderabad, JUPITER)
     print(position)
